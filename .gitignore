@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+#hide code API_KEY
+script/hidecode.js

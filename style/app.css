@@ -442,4 +442,8 @@ main {
     .footer {
         position: static;
     }
+
+    main {
+        margin-bottom: 0;
+    }
 }

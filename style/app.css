@@ -232,7 +232,8 @@ h1, h2, h3, h4, h5, h6, p, span, input, a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 320px;
-    height: 540px;
+    min-height: 540px;
+    height: 680px;
     background-color: var(--hard-dark);
     overflow-y: scroll;
 }
@@ -331,6 +332,8 @@ h1, h2, h3, h4, h5, h6, p, span, input, a {
     width: 100%;
     padding: 20px 0 0;
     background-color: var(--easy-gray);
+    position: absolute;
+    bottom: 0;
 }
 
 .footer__title {
@@ -428,5 +431,9 @@ h1, h2, h3, h4, h5, h6, p, span, input, a {
     .left-content-message {
         font-size: 2rem;
         margin: 20px 0;
+    }
+
+    .footer {
+        position: static;
     }
 }

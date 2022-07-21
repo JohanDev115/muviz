@@ -104,4 +104,4 @@ dist
 .tern-port
 
 #hide code API_KEY
-script/hidecode.js
+# script/hidecode.js

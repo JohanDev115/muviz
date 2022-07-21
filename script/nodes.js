@@ -27,5 +27,6 @@ const movieTitle = document.querySelector('#movie-title');
 const movieRate = document.querySelector('#movie-rate');
 const movieDescription = document.querySelector('#movie-description');
 const movieCategories = document.querySelector('#movie-categories');
+const footer = document.querySelector('#footer');
 
 

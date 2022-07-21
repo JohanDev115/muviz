@@ -6,11 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muviz</title>
     <link rel="stylesheet" href="./style/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    <h1>Muviz</h1>
+    <header class="header">
+        <div onclick="openNav()" class="icon header__menu-icon"></div>
+        <h1 class="header__title" id="banner_home">Muviz</h1>
+        <div class="search">
+            <input id="search-input" class="search__input" type="text" placeholder="search your movie...">
+            <div id="search" class="icon search__icon"></div>
+        </div>
+    </header>
+    <div id="sidenav" class="menu">
+        <a href="javascript:void(0)" class="menu__closebtn" onclick="closeNav()">&times;</a>
+        <nav id="categories-menu" class="menu-list">
+            <a class="menu-list__category">Home</a>
+        </nav>
+    </div>
+    <main>
+        <div id="welcome-section" class="welcome">
+            <h1 class="welcome__title">WELCOME AGAIN TO MUVIZ</h1>
+            <h3 class="welcome__subtitle">WHAT DO YOU WANT TO WATCH TODAY?</h3>
+        </div>
+        <section id="trendingPreview" class="list-of-movies trendingPreview">
+            <h2 class="list-of-movies__title">Trending</h2>
+        </section>
+        <section id="category-section" class="category-section inactive">
+            <h1 id="category-title" class="category-section__title">Category</h1>
+            <div id="category-movies" class="category-movies-container">
+            </div>
+        </section>
+        <section id="movie-section" class="movie-detail-section inactive">
+            <a href="javascript:void(0)" class="movie-detail-section__closebtn" onclick="closeMovieSection()">&times;</a>
+            <div id="movie-preview" class="movie-preview"></div>
+            <div class="description-section">
+                <div class="header-description">
+                    <h1 id="movie-title" class="header-description__title">The Northman</h1>
+                    <p class="header-description__rate"><img width="16" height="16" src="./assets/icons/star-free-icon-font.svg"/><span id="movie-rate" > 7.9</span></p>
+                </div>
+                <p id="movie-description" class="description-section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque mollitia iure assumenda exercitationem nemo officia? Eligendi quisquam porro ducimus earum, distinctio consequuntur libero harum natus exercitationem mollitia unde totam numquam.</p>
+            </div>
+            <ul id="movie-categories" class="movie-categories">
+            </ul>
+            <h2 class="movie-detail-section__recomend">You could see too</h2>
+            <div id="recomend-section" class="recomend-section">
+            </div>
+        </section>
+        <section id="search-section" class="search-section inactive">
+            <div id="search-movies" class="search-movies-container">
+            </div>
+        </section>
+        <section id="trends-section" class="trends-section inactive">
+            <h1 class="trends-section__little">Trending Movies</h1>
+            <div id="trends-movies" class="trends-movies-container">
+                <div class="trends-movie">
+                    <img class="movie-image" src="./assets/caratula.jpg" alt="Movie">
+                </div>
+                <div class="trends-movie">
+                    <img class="movie-image" src="./assets/caratula.jpg" alt="Movie">
+                </div>
+                <div class="trends-movie">
+                    <img class="movie-image" src="./assets/caratula.jpg" alt="Movie">
+                </div>
+                <div class="trends-movie">
+                    <img class="movie-image" src="./assets/caratula.jpg" alt="Movie">
+                </div>
+            </div>
+        </section>
+        <p id="lcm" class="left-content-message">More content soon...</p>
+    </main>
+    <footer class="footer">
+        <h1 class="footer__title">Contact Me</h1>
+        <div class="links-container">
+            <a class="link link--face" href="https://www.facebook.com/JohanDev-106866391958410"></a>
+            <a class="link link--github" href="https://github.com/JohanDev115"></a>
+            <a class="link link--twitter" href="https://twitter.com/JohanDev115"></a>
+            <a class="link link--linkedin" href="https://www.linkedin.com/in/johan-arena-51a1a8233"></a>
+        </div>
+    </footer>
 
     <script src="./script/hidecode.js"></script>
+    <script src="./script/nodes.js"></script>
+    <script src="./script/navigation.js"></script>
     <script src="./script/code.js"></script>
 </body>
 </html>

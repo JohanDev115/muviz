@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JohanDev115/muviz/issues"
   },
-  "homepage": "https://github.com/JohanDev115/muviz#readme"
+  "homepage": "https://github.com/JohanDev115/muviz#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }

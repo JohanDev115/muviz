@@ -1,32 +1,27 @@
-const recommendSection = document.querySelector('#recomend-section');
-const trendsMovies = document.querySelector('#trends-movies');
-const searchMovies = document.querySelector('#search-movies');
-const categoryMovies = document.querySelector('#category-movies');
-const categoryTitle = document.querySelector('#category-title');
-const lcm = document.querySelector('#lcm');
-const bannerHome = document.querySelector('#banner_home');
-
-const sideNav = document.querySelector('#sidenav');
-const showMoreTrends = document.getElementsByClassName('see-more')[0];
-const searchIcon = document.querySelector('#search-icon');
+const bannerHome = document.querySelector('#logo');
 const searchInput = document.querySelector('#search-input');
-
+const sideNav = document.querySelector('#sidenav');
 const welcomeSection = document.querySelector('#welcome-section');
-const trendingPreviewSection = document.querySelector('#trendingPreview');
+const backArrow = document.querySelector('#back-arrow');
+const trendingPreviewSection = document.querySelector('#trending-preview-section');
+const trendingPreviewList = document.querySelector('#trending-preview-list');
+const favoriteMoviesSection = document.querySelector('#favorite-movie-section');
+const favoriteMoviesList = document.querySelector('#favorite-movie-list');
 const categorySection = document.querySelector('#category-section');
-const movieSection = document.querySelector('#movie-section');
+const categoryMovieList = document.querySelector('#category-movies-list');
+const categoryTitle = document.querySelector('#category-title');
 const searchSection = document.querySelector('#search-section');
-const trendsSection = document.querySelector('#trends-section');
-
-const seeMoreIcon = document.createElement('DIV');
-
-//--------------------------
-
+const searchMovieList = document.querySelector('#search-movies-list');
+const movieSection = document.querySelector('#movie-section');
 const moviePreview = document.querySelector('#movie-preview');
 const movieTitle = document.querySelector('#movie-title');
 const movieRate = document.querySelector('#movie-rate');
 const movieDescription = document.querySelector('#movie-description');
 const movieCategories = document.querySelector('#movie-categories');
-const footer = document.querySelector('#footer');
-
+const recommendSection = document.querySelector('#recomend-section');
+const searchResult = document.querySelector('#search-result');
+const searchIcon = document.querySelector('#search-icon');
+const scrollTarget = document.querySelector('#scroll-target');
+const trendsSection = document.querySelector('#trends-section');
+const trendsMovies = document.querySelector('#trends-movies');
 

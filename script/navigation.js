@@ -60,7 +60,7 @@ function hideSection(sections) {
 }
 
 function homePage() {;
-    showSection([welcomeSection, trendingPreviewSection, favoriteMoviesSection]);
+    showSection([welcomeSection, trendingPreviewSection, loadMoreContent]);
     hideSection([categorySection, backArrow, searchSection, movieSection, trendsSection]);
 
     getTrendingMoviesPreview();
@@ -83,7 +83,7 @@ function categoriesPage() {
 
 function moviePage() {
     showSection([movieSection, backArrow]);
-    hideSection([welcomeSection, trendingPreviewSection, favoriteMoviesSection, categorySection, searchSection, trendsSection]);
+    hideSection([welcomeSection, trendingPreviewSection, favoriteMoviesSection, categorySection, searchSection, trendsSection, loadMoreContent]);
 
     const [_, movieId] = location.hash.split('=');
     getMovieById(movieId);
@@ -94,7 +94,7 @@ function moviePage() {
 
 function searchPage() {
     showSection([searchSection, backArrow]);
-    hideSection([welcomeSection, trendingPreviewSection, favoriteMoviesSection, categorySection, movieSection, trendsSection]);
+    hideSection([welcomeSection, trendingPreviewSection, favoriteMoviesSection, categorySection, movieSection, trendsSection, loadMoreContent]);
 
     searchSection.scroll(0, 0);
     const [_, query] = location.hash.split('=');
@@ -105,7 +105,7 @@ function searchPage() {
 function trendsPage() {
     location.hash = '#trends';
     showSection([trendsSection, backArrow]);
-    hideSection([welcomeSection, trendingPreviewSection, favoriteMoviesSection, categorySection, movieSection, searchSection]);
+    hideSection([welcomeSection, trendingPreviewSection, favoriteMoviesSection, categorySection, movieSection, searchSection, loadMoreContent]);
     
     getTrendingMovies();
     infiniteScroll = getPaginatedTrendingMovies;

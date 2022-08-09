@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5, h6, p, span, input, a {
     max-width: 700px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom;
+    background-position: top;
     background-attachment: fixed;
     animation-name: flicker;
     animation-duration: .7s;
@@ -416,8 +416,7 @@ h1, h2, h3, h4, h5, h6, p, span, input, a {
     width: 100%;
     padding: 20px 0 0;
     background-color: var(--easy-gray);
-    position: fixed;
-    bottom: 0;
+    margin-top: 200px;
 }
 
 .footer__title {

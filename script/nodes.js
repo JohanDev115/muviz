@@ -24,4 +24,5 @@ const searchIcon = document.querySelector('#search-icon');
 const scrollTarget = document.querySelector('#scroll-target');
 const trendsSection = document.querySelector('#trends-section');
 const trendsMovies = document.querySelector('#trends-movies');
+const loadMoreContent = document.querySelector('#load-more-content');
 
